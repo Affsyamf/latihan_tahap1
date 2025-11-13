@@ -11,9 +11,9 @@ def read():
     print("="*40)
     
     for no, item in enumerate (database.list_tugas):
-        judul = item[0]
-        nama = item[1]
-        desc = item[2]
+        judul = item["judul"]
+        nama = item["diberikan"]
+        desc = item["desc"]
         print(f"{no+1}\t {judul}\t {nama}\t {desc}\t")
         
     return True 

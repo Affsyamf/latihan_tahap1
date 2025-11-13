@@ -8,7 +8,7 @@ def delete():
         return
     
     try:
-        nomor = int(input("Masukan angka yang ingin di hapus"))
+        nomor = int(input("Masukan angka yang ingin di hapus : "))
         
         if nomor < 1 or nomor > len(database.list_tugas):
             print(f"Masukan nomor yang benar")
@@ -17,7 +17,7 @@ def delete():
         indeks = nomor - 1
         
         tugas_hapus = database.list_tugas[indeks]
-        konfirmasi = input(f"{tugas_hapus[0]} Hapus? | Masukan y/n")
+        konfirmasi = input(f"{tugas_hapus["judul"]} Hapus? | Masukan y/n")
         
         if konfirmasi == 'y':
             database.list_tugas.pop(indeks)
