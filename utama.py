@@ -2,9 +2,11 @@ from create import create
 from read import read
 from delete import delete
 from update import update
+from header import header
 
 def utama():
     while True:
+        header()
         print("\n" + "="*20 + "Utama" + "="*20)
         print("1. tambah tugas")
         print("2. lihat tugas")
