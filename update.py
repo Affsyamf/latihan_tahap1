@@ -15,20 +15,15 @@ def update():
         
         indeks = nomor - 1
         
-        tugas_lama = database.list_tugas[indeks]["judul"]
+        tugas_lama = database.list_tugas[indeks]
         
         print(f"Mengubah tugas {tugas_lama}")
         
-        tugas_baru = input("Masukan judul baru : ")
+        judul_baru = input("Masukan judul baru : ")
         nama_baru = input("Masukan nama baru : ")
-        desc_baru = input("Masukan desc baru : ")
+        deskripsi_baru = input("Masukan Deskripsi baru : ")
         
-        if tugas_baru:
-            database.list_tugas[indeks]["judul"] = tugas_baru
-        if nama_baru:
-            database.list_tugas[indeks]["diberikan"] = nama_baru
-        if desc_baru:
-            database.list_tugas[indeks]["desc"] = desc_baru
+        tugas_lama.ubah_data(judul_baru, nama_baru, deskripsi_baru)
             
         read() 
     except ValueError:
