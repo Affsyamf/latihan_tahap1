@@ -17,7 +17,7 @@ def delete():
         indeks = nomor - 1
         
         tugas_hapus = database.list_tugas[indeks]
-        konfirmasi = input(f"Hapus {tugas_hapus.judul} ? | Masukan y/n")
+        konfirmasi = input(f"Hapus {tugas_hapus.judul} ? | Masukan y/n : ")
         
         if konfirmasi == 'y':
             database.list_tugas.pop(indeks)
