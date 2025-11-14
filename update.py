@@ -20,8 +20,8 @@ def update():
         print(f"Mengubah tugas {tugas_lama.judul}")
         
         judul_baru = input("Masukan judul baru : ")
-        nama_baru = input("Masukan nama baru : ")
         deskripsi_baru = input("Masukan Deskripsi baru : ")
+        nama_baru = input("Masukan nama baru : ")
         
         tugas_lama.ubah_data(judul_baru, nama_baru, deskripsi_baru)
             
