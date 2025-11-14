@@ -17,7 +17,7 @@ def update():
         
         tugas_lama = database.list_tugas[indeks]
         
-        print(f"Mengubah tugas {tugas_lama}")
+        print(f"Mengubah tugas {tugas_lama.judul}")
         
         judul_baru = input("Masukan judul baru : ")
         nama_baru = input("Masukan nama baru : ")
